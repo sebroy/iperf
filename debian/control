@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-Source: iperf3
+Source: iperf
 Section: net
 Priority: optional
 Maintainer: iperf@es.net
