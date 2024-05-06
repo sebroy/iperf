@@ -18,7 +18,7 @@ Source: iperf
 Section: net
 Priority: optional
 Maintainer: iperf@es.net
-Build-Depends: debhelper-compat (= 12), libssl-dev, libsctp-dev [linux-any]
+Build-Depends: libssl-dev, libsctp-dev [linux-any]
 Standards-Version: 4.4.1
 Rules-Requires-Root: no
 Homepage: http://software.es.net/iperf/
