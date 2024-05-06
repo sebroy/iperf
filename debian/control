@@ -14,13 +14,14 @@
 # limitations under the License.
 #
 
-Source: iperf
+Source: iperf3
 Section: net
 Priority: optional
 Maintainer: iperf@es.net
-Build-Depends: libssl-dev,
-               libsctp-dev
+Build-Depends: debhelper-compat (= 12), libssl-dev, libsctp-dev [linux-any]
 Standards-Version: 4.4.1
+Rules-Requires-Root: no
+Homepage: http://software.es.net/iperf/
 
 Package: iperf3
 Architecture: any
@@ -36,10 +37,10 @@ Description: Internet Protocol bandwidth measuring tool
 
 Package: libiperf0
 Architecture: any
-Section: libs
+Section: libdevel
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: libiperf0 (= ${binary:Version}), ${misc:Depends}
 Description: Internet Protocol bandwidth measuring tool (runtime files)
  Iperf3 is a tool for performing network throughput measurements. It can
  test either TCP or UDP throughput.

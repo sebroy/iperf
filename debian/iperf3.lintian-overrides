@@ -1,0 +1,4 @@
+# false positive, only debian/* is GPL
+iperf3: possible-gpl-code-linked-with-openssl
+# won't break the example line as I think it's more readable as it is
+iperf3: manpage-has-errors-from-man
